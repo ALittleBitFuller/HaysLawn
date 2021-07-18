@@ -1,0 +1,308 @@
+/* Global Stlyes
+-------------------------------------------------- */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    color: #5a5a5a;
+    /* background: url(../img/fullerocean-white.jpg) 50% 0 no-repeat fixed;
+    background-position: center center;
+    background-size: cover; */
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+    color: #00aeef;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #19BFFF;
+    text-decoration: none;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:1170px
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+h2.section-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2.section-header span{
+    border-bottom: #8DC63F solid 5px;
+    padding-bottom: 8px;
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+header {
+    margin: 10px 0;
+}
+
+header .grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+}
+
+header .contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .contact .phone{
+    margin-left: 20px;
+}
+
+.navbar-brand img {
+    height: 38px;
+}
+
+/* Hero
+-------------------------------------------------- */
+
+.hero {
+    background-color: #8DC63F;
+    background-image: url(../img/green-lawn-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center -50px;
+    background-size: cover;
+    /* height: 420px; */
+    /* max-width: 1200px; */
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.shadow-background {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 50px;
+}
+
+.slogan {
+	background: #fafafa;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.slogan-content {
+	padding: 25px 0;
+}
+
+.slogan-title {
+	display: inline-block;
+	margin: 10px 0 0;
+}
+
+.slogan .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slogan .container #slogan h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.btn-special {
+    border-radius: 4px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #00aeef;
+}
+
+.btn-primary:hover {
+    background-color: #19BFFF;
+}
+
+.get-started a {
+    color: #fff;
+}
+
+/* SERVICES
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.services {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* Center align the text within the three columns */
+.services h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.services img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.services .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+}
+
+.services .grid .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .grid .item ul {
+    padding-left: 0;
+}
+
+.services .grid .item li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.services .grid .item li:before {
+  content: '';
+  display: inline-block;
+  height: 13px;
+  background: url(../img/greencheck.svg) no-repeat bottom;
+  padding-left: 38px;
+  background-size: 1em;
+}
+
+/* Quotes
+------------------------- */
+
+.latest-quotes {
+    background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa-4.jpg) 50% 0 no-repeat fixed;
+    margin-bottom: 80px;
+    padding: 50px 0;
+    background-position: center center;
+    background-size: cover;
+}
+
+.latest-quotes blockquote {
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #eee;
+    text-align: right;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.latest-quotes cite {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+}
+
+/* .contact-us::after { background-color: #563d7c; content: ""; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; opacity: 0.4; } */
+.contact-us {
+    /* color: #FFF; */
+    border-bottom: 1px solid #414f5a;
+    /* color: #fff; */
+    padding: 50px 0;
+    background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa.jpg) 50% 0 no-repeat fixed;
+    background-color: rgba(0,0,0,.5);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-us .grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+}
+
+.contact-details li {
+    list-style: none;
+}
+
+#footer {
+    margin-top: 0;
+}
+
+/* Footer */
+.footer-top {
+    background: #8dc63f;
+    border-bottom: 1px solid #414f5a;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-top .grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+}
+
+.footer-bottom {
+    background: #25292C;
+    color: #888;
+    line-height: 30px;
+    padding: 15px;
+}
+
+footer a,.contact-box:hover, #options li .selected, header .top-bar, header .top-bar a, header .social li:hover i, footer .social li:hover i, .content-box:hover>.content-box-icon i, div.content-box div.content-box-icon:hover, div.content-box div.content-box-icon:hover i, #footer h3, .contact-box:hover h3 {
+    color: #fff;
+}

@@ -1,0 +1,4 @@
+{
+    "jest.enableInlineErrorMessages": true,
+    "jest.showCoverageOnLoad": true
+}
