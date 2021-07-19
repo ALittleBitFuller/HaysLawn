@@ -8,14 +8,26 @@ html {
 body {
     margin: 0;
     color: #5a5a5a;
-    /* background: url(../img/fullerocean-white.jpg) 50% 0 no-repeat fixed;
-    background-position: center center;
-    background-size: cover; */
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-family: 
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue", Arial,
+        "Noto Sans",
+        "Liberation Sans",
+        sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a {
@@ -75,22 +87,54 @@ header {
 }
 
 header .grid{
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3em;
+    grid-template-columns: 1fr;
+}
+    
+header .logo {
+    text-align: center;
+    padding: 10px 0;
 }
 
 header .contact {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column-reverse;
+    height: 80px;
 }
 
-header .contact .phone{
+header .contact .phone, header .contact .social-media {
     margin-left: 20px;
 }
 
+header .contact .social-media a i {
+    font-size: 1.3em;
+    color: #8DC63F;
+}
+
+
 .navbar-brand img {
     height: 38px;
+}
+
+@media (min-width: 1200px) {
+
+    header .grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;
+    }
+
+    header .logo {
+        text-align: left;
+        padding: 5px 0 0 0;
+    }
+
+    header .contact {
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 46px;
+    }
+
 }
 
 /* Hero
@@ -100,13 +144,13 @@ header .contact .phone{
     background-color: #8DC63F;
     background-image: url(../img/green-lawn-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center -50px;
+    background-position: center;
     background-size: cover;
     /* height: 420px; */
     /* max-width: 1200px; */
     position: relative;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 0;
     color: #fff;
 }
 
@@ -115,9 +159,41 @@ header .contact .phone{
     font-size: 3em;
 }
 
+.hero h2.section-header {
+    padding-bottom: 0;
+}
+
 .shadow-background {
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1px 20px 30px;
+    text-align: justify;
+}
+
+@media (min-width: 1200px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .shadow-background {
+        text-align: left;
+    }
+
+    .hero h2.section-header {
+        padding-bottom: 20px;
+    }
+
+}
+
+.containing-flex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 1200px) {
+    .containing-flex {
+        flex-direction: column;
+    }
 }
 
 .slogan {
@@ -127,6 +203,8 @@ header .contact .phone{
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .slogan-content {
@@ -140,7 +218,7 @@ header .contact .phone{
 
 .slogan .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -173,8 +251,30 @@ header .contact .phone{
     background-color: #19BFFF;
 }
 
+.get-started {
+    padding: 20px 0;
+}
+
 .get-started a {
     color: #fff;
+}
+
+@media (min-width: 1200px) {
+
+    .slogan {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .slogan .container {
+        flex-direction: row;
+    }
+
+    .get-started {
+        padding: 0;
+    }
+
+
 }
 
 /* SERVICES
@@ -182,10 +282,7 @@ header .contact .phone{
 
 /* Pad the edges of the mobile views a bit */
 .services {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin: 40px 0;
 }
 
 /* Center align the text within the three columns */
@@ -202,8 +299,17 @@ header .contact .phone{
 }
 
 .services .grid{
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3em;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 1200px) {
+    .services .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3em;
+    }
+    .services {
+        margin: 60px 0 40px;
+    }
 }
 
 .services .grid .item {
@@ -230,12 +336,16 @@ header .contact .phone{
   background-size: 1em;
 }
 
+.biography {
+    margin-bottom: 80px;
+}
+
 /* Quotes
 ------------------------- */
 
 .latest-quotes {
     background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa-4.jpg) 50% 0 no-repeat fixed;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     padding: 50px 0;
     background-position: center center;
     background-size: cover;
@@ -244,18 +354,34 @@ header .contact .phone{
 .latest-quotes blockquote {
     padding-right: 15px;
     padding-left: 0;
+    padding-bottom: 10px;
     border-right: 5px solid #eee;
     text-align: right;
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+@media (min-width: 1200px) {
+    .latest-quotes blockquote {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
 
 .latest-quotes cite {
-    font-size: 18px;
+    font-size: 14px;
     font-style: italic;
-    margin-top: 5px;
-    padding: 15px 10px;
+    margin-top: 20px;
     text-transform: uppercase;
+    display: block;
+    line-height: 16px;
+}
+
+@media (min-width: 1200px) {
+    .latest-quotes cite {
+        font-size: 18px;
+    }
 }
 
 /* .contact-us::after { background-color: #563d7c; content: ""; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; opacity: 0.4; } */
@@ -264,19 +390,30 @@ header .contact .phone{
     border-bottom: 1px solid #414f5a;
     /* color: #fff; */
     padding: 50px 0;
-    background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa.jpg) 50% 0 no-repeat fixed;
-    background-color: rgba(0,0,0,.5);
+    /* background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa.jpg) 50% 0 no-repeat fixed;
+    background-color: rgba(0,0,0,.5); */
     background-size: cover;
     background-position: center;
 }
 
 .contact-us .grid{
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3em;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 1200px) {
+    .contact-us .grid {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 0;
+    }
 }
 
 .contact-details li {
     list-style: none;
+}
+
+i.contact-us-icon {
+    float: left;
+    margin-left: -28px;
 }
 
 #footer {
@@ -292,17 +429,37 @@ header .contact .phone{
 }
 
 .footer-top .grid{
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3em;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 1200px) {
+    .footer-top .grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;
+    }
 }
 
 .footer-bottom {
     background: #25292C;
     color: #888;
     line-height: 30px;
-    padding: 15px;
+    padding: 15px 0 10px;
 }
 
-footer a,.contact-box:hover, #options li .selected, header .top-bar, header .top-bar a, header .social li:hover i, footer .social li:hover i, .content-box:hover>.content-box-icon i, div.content-box div.content-box-icon:hover, div.content-box div.content-box-icon:hover i, #footer h3, .contact-box:hover h3 {
-    color: #fff;
+.footer-bottom i.fab {
+    font-size: 1.7em;
+    color: #8DC63F;
 }
+
+.footer-bottom .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+}
+
+.footer-bottom .grid .social-media {
+    text-align: right;
+}
+
+/* footer a,.contact-box:hover, #options li .selected, header .top-bar, header .top-bar a, header .social li:hover i, footer .social li:hover i, #footer h3, .contact-box:hover h3 {
+    color: #fff;
+} */
