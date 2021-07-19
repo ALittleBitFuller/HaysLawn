@@ -2,23 +2,15 @@
 -------------------------------------------------- */
 
 html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 body {
-    margin: 0;
-    color: #5a5a5a;
-    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
-    font-family: 
-        system-ui,
-        -apple-system,
-        "Segoe UI",
-        Roboto,
-        "Helvetica Neue", Arial,
-        "Noto Sans",
-        "Liberation Sans",
-        sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  color: #5a5a5a;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1 {
@@ -26,268 +18,260 @@ h1 {
   margin: 0.67em 0;
 }
 
-h1, h2, h3 {
-    font-family: 'Times New Roman', Times, serif;
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
-    color: #00aeef;
-    text-decoration: none;
+  color: #00aeef;
+  text-decoration: none;
 }
 
-a:hover, a:focus {
-    color: #19BFFF;
-    text-decoration: none;
+a:hover,
+a:focus {
+  color: #19bfff;
+  text-decoration: none;
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 768px) {
-    .container {
-        width:750px
-    }
+  .container {
+    width: 750px;
+  }
 }
 
 @media (min-width: 992px) {
-    .container {
-        width:970px
-    }
+  .container {
+    width: 970px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width:1170px
-    }
+  .container {
+    width: 1170px;
+  }
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 h2.section-header {
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-h2.section-header span{
-    border-bottom: #8DC63F solid 5px;
-    padding-bottom: 8px;
+h2.section-header span {
+  border-bottom: #8dc63f solid 5px;
+  padding-bottom: 8px;
 }
 
 /* Navbar
 -------------------------------------------------- */
 
 header {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
-header .grid{
-    grid-template-columns: 1fr;
+header .grid {
+  grid-template-columns: 1fr;
 }
-    
+
 header .logo {
-    text-align: center;
-    padding: 10px 0;
+  text-align: center;
+  padding: 10px 0;
 }
 
 header .contact {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column-reverse;
-    height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 80px;
 }
 
-header .contact .phone, header .contact .social-media {
-    margin-left: 20px;
+header .contact .phone,
+header .contact .social-media {
+  margin-left: 20px;
 }
 
 header .contact .social-media a i {
-    font-size: 1.3em;
-    color: #8DC63F;
+  font-size: 1.3em;
+  color: #8dc63f;
 }
 
-
 .navbar-brand img {
-    height: 38px;
+  height: 38px;
 }
 
 @media (min-width: 1200px) {
+  header .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+  }
 
-    header .grid {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 3em;
-    }
+  header .logo {
+    text-align: left;
+    padding: 5px 0 0 0;
+  }
 
-    header .logo {
-        text-align: left;
-        padding: 5px 0 0 0;
-    }
-
-    header .contact {
-        flex-direction: row;
-        justify-content: flex-end;
-        height: 46px;
-    }
-
+  header .contact {
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 46px;
+  }
 }
 
 /* Hero
 -------------------------------------------------- */
 
 .hero {
-    background-color: #8DC63F;
-    background-image: url(../img/green-lawn-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* height: 420px; */
-    /* max-width: 1200px; */
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    color: #fff;
+  background-color: #8dc63f;
+  background-image: url(../img/green-lawn-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
 }
 
 .hero h2 {
-    text-align: center;
-    font-size: 3em;
+  text-align: center;
+  font-size: 3em;
 }
 
 .hero h2.section-header {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .shadow-background {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 1px 20px 30px;
-    text-align: justify;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1px 20px 30px;
+  text-align: justify;
 }
 
 @media (min-width: 1200px) {
+  .hero {
+    padding: 70px 0;
+  }
 
-    .hero {
-        padding: 70px 0;
-    }
+  .shadow-background {
+    text-align: left;
+  }
 
-    .shadow-background {
-        text-align: left;
-    }
-
-    .hero h2.section-header {
-        padding-bottom: 20px;
-    }
-
+  .hero h2.section-header {
+    padding-bottom: 20px;
+  }
 }
 
 .containing-flex {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 @media (min-width: 1200px) {
-    .containing-flex {
-        flex-direction: column;
-    }
+  .containing-flex {
+    flex-direction: column;
+  }
 }
 
 .slogan {
-	background: #fafafa;
-	border-top: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-    margin-bottom: 40px;
-    text-align: center;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .slogan-content {
-	padding: 25px 0;
+  padding: 25px 0;
 }
 
 .slogan-title {
-	display: inline-block;
-	margin: 10px 0 0;
+  display: inline-block;
+  margin: 10px 0 0;
 }
 
 .slogan .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .slogan .container #slogan h2 {
-    font-size: 22px;
-    margin-top: 10px;
+  font-size: 22px;
+  margin-top: 10px;
 }
 
 .btn-special {
-    border-radius: 4px;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    margin-top: 10px;
+  border-radius: 4px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  margin-top: 10px;
 }
 
 .btn-primary {
-    background-color: #00aeef;
+  background-color: #00aeef;
 }
 
 .btn-primary:hover {
-    background-color: #19BFFF;
+  background-color: #19bfff;
 }
 
 .get-started {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .get-started a {
-    color: #fff;
+  color: #fff;
 }
 
 @media (min-width: 1200px) {
+  .slogan {
+    margin-bottom: 0;
+    text-align: left;
+  }
 
-    .slogan {
-        margin-bottom: 0;
-        text-align: left;
-    }
+  .slogan .container {
+    flex-direction: row;
+  }
 
-    .slogan .container {
-        flex-direction: row;
-    }
-
-    .get-started {
-        padding: 0;
-    }
-
-
+  .get-started {
+    padding: 0;
+  }
 }
 
 /* SERVICES
 -------------------------------------------------- */
 
-/* Pad the edges of the mobile views a bit */
 .services {
   margin: 40px 0;
 }
 
-/* Center align the text within the three columns */
 .services h3 {
-    font-weight: normal;
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 0;
-    border-bottom: #ddd solid 2px;
-    padding-bottom: 5px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  border-bottom: #ddd solid 2px;
+  padding-bottom: 5px;
 }
 
 .services img {
@@ -295,38 +279,38 @@ header .contact .social-media a i {
   border-radius: 50%;
 }
 
-.services .grid{
-    grid-template-columns: 1fr;
-    row-gap: 2em;
+.services .grid {
+  grid-template-columns: 1fr;
+  row-gap: 2em;
 }
 
 @media (min-width: 1200px) {
-    .services .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 3em;
-    }
-    .services {
-        margin: 60px 0 40px;
-    }
+  .services .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+  }
+  .services {
+    margin: 60px 0 40px;
+  }
 }
 
 .services .grid .item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .services .grid .item ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .services .grid .item li {
-    list-style: none;
-    line-height: 30px;
+  list-style: none;
+  line-height: 30px;
 }
 
 .services .grid .item li:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 13px;
   background: url(../img/greencheck.svg) no-repeat bottom;
@@ -335,129 +319,121 @@ header .contact .social-media a i {
 }
 
 .biography {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 /* Quotes
 ------------------------- */
 
 .latest-quotes {
-    background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa-4.jpg) 50% 0 no-repeat fixed;
-    /* margin-bottom: 80px; */
-    padding: 50px 0;
-    background-position: center center;
-    background-size: cover;
+  background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa-4.jpg)
+    50% 0 no-repeat fixed;
+  /* margin-bottom: 80px; */
+  padding: 50px 0;
+  background-position: center center;
+  background-size: cover;
 }
 
 .latest-quotes blockquote {
-    padding-right: 15px;
-    padding-left: 0;
-    padding-bottom: 10px;
-    border-right: 5px solid #eee;
-    text-align: right;
-    font-size: 18px;
-    line-height: 25px;
+  padding-right: 15px;
+  padding-left: 0;
+  padding-bottom: 10px;
+  border-right: 5px solid #eee;
+  text-align: right;
+  font-size: 18px;
+  line-height: 25px;
 }
 
-
 @media (min-width: 1200px) {
-    .latest-quotes blockquote {
-        font-size: 28px;
-        line-height: 38px;
-    }
+  .latest-quotes blockquote {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 .latest-quotes cite {
-    font-size: 14px;
-    font-style: italic;
-    margin-top: 20px;
-    text-transform: uppercase;
-    display: block;
-    line-height: 16px;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: block;
+  line-height: 16px;
 }
 
 @media (min-width: 1200px) {
-    .latest-quotes cite {
-        font-size: 18px;
-    }
+  .latest-quotes cite {
+    font-size: 18px;
+  }
 }
 
-/* .contact-us::after { background-color: #563d7c; content: ""; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; opacity: 0.4; } */
+
 .contact-us {
-    /* color: #FFF; */
-    border-bottom: 1px solid #414f5a;
-    /* color: #fff; */
-    padding: 50px 0;
-    /* background: url(../img/pensacola-beach-in-escambia-county-florida-on-the-gulf-of-mexico-usa.jpg) 50% 0 no-repeat fixed;
-    background-color: rgba(0,0,0,.5); */
-    background-size: cover;
-    background-position: center;
+  border-bottom: 1px solid #414f5a;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
 }
 
-.contact-us .grid{
-    grid-template-columns: 1fr;
+.contact-us .grid {
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 1200px) {
-    .contact-us .grid {
-        grid-template-columns: 1fr 2fr;
-        column-gap: 0;
-    }
+  .contact-us .grid {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0;
+  }
 }
 
 .contact-details li {
-    list-style: none;
+  list-style: none;
 }
 
 i.contact-us-icon {
-    float: left;
-    margin-left: -28px;
+  float: left;
+  margin-left: -28px;
 }
 
 #footer {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Footer */
 .footer-top {
-    background: #8dc63f;
-    border-bottom: 1px solid #414f5a;
-    color: #fff;
-    padding: 50px 0;
+  background: #8dc63f;
+  border-bottom: 1px solid #414f5a;
+  color: #fff;
+  padding: 50px 0;
 }
 
-.footer-top .grid{
-    grid-template-columns: 1fr;
+.footer-top .grid {
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 1200px) {
-    .footer-top .grid {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 3em;
-    }
+  .footer-top .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+  }
 }
 
 .footer-bottom {
-    background: #25292C;
-    color: #888;
-    line-height: 30px;
-    padding: 15px 0 10px;
+  background: #25292c;
+  color: #888;
+  line-height: 30px;
+  padding: 15px 0 10px;
 }
 
 .footer-bottom i.fab {
-    font-size: 1.7em;
-    color: #8DC63F;
+  font-size: 1.7em;
+  color: #8dc63f;
 }
 
 .footer-bottom .grid {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3em;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
 }
 
 .footer-bottom .grid .social-media {
-    text-align: right;
+  text-align: right;
 }
-
-/* footer a,.contact-box:hover, #options li .selected, header .top-bar, header .top-bar a, header .social li:hover i, footer .social li:hover i, #footer h3, .contact-box:hover h3 {
-    color: #fff;
-} */
