@@ -235,11 +235,6 @@ header .contact .social-media a i {
     letter-spacing: 1px;
     font-weight: 700;
     outline: none;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
     margin-top: 10px;
 }
 
@@ -291,6 +286,8 @@ header .contact .social-media a i {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 0;
+    border-bottom: #ddd solid 2px;
+    padding-bottom: 5px;
 }
 
 .services img {
@@ -300,6 +297,7 @@ header .contact .social-media a i {
 
 .services .grid{
     grid-template-columns: 1fr;
+    row-gap: 2em;
 }
 
 @media (min-width: 1200px) {
