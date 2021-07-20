@@ -196,10 +196,6 @@ header .contact .social-media a i {
   text-align: center;
 }
 
-.slogan-content {
-  padding: 25px 0;
-}
-
 .slogan-title {
   display: inline-block;
   margin: 10px 0 0;
@@ -210,11 +206,6 @@ header .contact .social-media a i {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-.slogan .container #slogan h2 {
-  font-size: 22px;
-  margin-top: 10px;
 }
 
 .btn-special {
