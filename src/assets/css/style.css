@@ -38,8 +38,8 @@ a:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 @media (min-width: 768px) {
@@ -156,7 +156,7 @@ header .contact .social-media a i {
 
 .shadow-background {
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 1px 20px 30px;
+  padding: 1px 0 30px;
   text-align: justify;
 }
 
@@ -266,13 +266,23 @@ header .contact .social-media a i {
 }
 
 .services img {
-  width: 300px;
+  width: 100%;
   border-radius: 50%;
+  border: solid #ddd 2px;
+  height: auto;
 }
 
 .services .grid {
   grid-template-columns: 1fr;
   row-gap: 2em;
+}
+
+@media (min-width: 504px) {
+  .services img {
+    width: 300px;
+    border-radius: 50%;
+    border: solid #ddd 2px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -333,6 +343,7 @@ header .contact .social-media a i {
   text-align: right;
   font-size: 18px;
   line-height: 25px;
+  margin: 0;
 }
 
 @media (min-width: 1200px) {
@@ -356,7 +367,6 @@ header .contact .social-media a i {
     font-size: 18px;
   }
 }
-
 
 .contact-us {
   border-bottom: 1px solid #414f5a;
