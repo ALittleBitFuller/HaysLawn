@@ -154,10 +154,13 @@ header .contact .social-media a i {
   padding-bottom: 0;
 }
 
+.hero p{
+    text-align: justify;
+}
+
 .shadow-background {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1px 0 30px;
-  text-align: justify;
 }
 
 @media (min-width: 1200px) {
@@ -165,12 +168,19 @@ header .contact .social-media a i {
     padding: 70px 0;
   }
 
+  .hero p{
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
   .shadow-background {
     text-align: left;
   }
 
   .hero h2.section-header {
     padding-bottom: 20px;
+    letter-spacing: 3px;
   }
 }
 
@@ -280,8 +290,6 @@ header .contact .social-media a i {
 @media (min-width: 504px) {
   .services img {
     width: 300px;
-    border-radius: 50%;
-    border: solid #ddd 2px;
   }
 }
 
@@ -321,6 +329,23 @@ header .contact .social-media a i {
 
 .biography {
   margin-bottom: 80px;
+}
+
+.biography .headshot {
+  text-align: center;
+}
+
+.biography img {
+  width: 100%;
+  border-radius: 50%;
+  border: solid #ddd 2px;
+  height: auto;
+}
+
+@media (min-width: 504px) {
+  .biography img {
+    width: 300px;
+  }
 }
 
 /* Quotes
@@ -404,7 +429,7 @@ i.contact-us-icon {
   background: #8dc63f;
   border-bottom: 1px solid #414f5a;
   color: #fff;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .footer-top .grid {
