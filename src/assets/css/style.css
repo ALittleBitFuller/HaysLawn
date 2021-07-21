@@ -431,8 +431,15 @@ i.contact-us-icon {
 }
 
 .footer-bottom .grid {
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3em;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 0em;
+}
+
+@media (min-width: 1200px) {
+  .footer-bottom .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+  }
 }
 
 .footer-bottom .grid .social-media {
