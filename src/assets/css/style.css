@@ -35,6 +35,14 @@ a:focus {
   text-decoration: none;
 }
 
+.green {
+    color: #8dc63f;
+}
+
+.dark-grey {
+    color: #5a5a5a;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -44,7 +52,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 698px;
   }
 }
 
@@ -154,8 +162,8 @@ header .contact .social-media a i {
   padding-bottom: 0;
 }
 
-.hero p{
-    text-align: justify;
+.hero p {
+  text-align: justify;
 }
 
 .shadow-background {
@@ -168,11 +176,11 @@ header .contact .social-media a i {
     padding: 70px 0;
   }
 
-  .hero p{
+  .hero p {
     line-height: 1.4em;
     letter-spacing: 1px;
     text-align: left;
-}
+  }
 
   .shadow-background {
     text-align: left;
@@ -194,6 +202,9 @@ header .contact .social-media a i {
     flex-direction: column;
   }
 }
+
+/* SLOGAN
+------------------------- */
 
 .slogan {
   background: #fafafa;
@@ -327,28 +338,62 @@ header .contact .social-media a i {
   background-size: 1em;
 }
 
+/* BIOGRAPHY
+------------------------- */
+
 .biography {
-  margin-bottom: 80px;
+  padding-bottom: 60px;
+  background: #fff;
+}
+
+.biography .flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .biography .headshot {
   text-align: center;
 }
 
+.biography .cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headshot img {
-  width: 100%;
+  /* width: 100%; */
   border-radius: 50%;
   border: solid #ddd 2px;
   height: auto;
+  /* margin-right: 40px; */
 }
 
-@media (min-width: 504px) {
-  .biography img {
-    width: 300px;
+@media (min-width: 768px) {
+  .biography .cv p:first-child,
+  .biography .cv p:last-child {
+    margin-top: 0;
+  }
+
+  .biography .flex {
+    flex-direction: row;
+  }
+  .headshot img {
+    margin-right: 40px;
+    width: 240px;
   }
 }
 
-/* Quotes
+@media (min-width: 1200px) {
+  .biography {
+    padding: 30px 0 60px;
+    background: #fafafa;
+  }
+}
+
+/* CUSTOMER QUOTES
 ------------------------- */
 
 .latest-quotes {
@@ -393,6 +438,9 @@ header .contact .social-media a i {
   }
 }
 
+/* CONTACT
+------------------------- */
+
 .contact-us {
   border-bottom: 1px solid #414f5a;
   padding: 50px 0;
@@ -424,7 +472,8 @@ i.contact-us-icon {
   margin-top: 0;
 }
 
-/* Footer */
+/* FOOTER
+------------------------- */
 .footer-top {
   background: #8dc63f;
   border-bottom: 1px solid #414f5a;
