@@ -36,11 +36,11 @@ a:focus {
 }
 
 .green {
-    color: #8dc63f;
+  color: #8dc63f;
 }
 
 .dark-grey {
-    color: #5a5a5a;
+  color: #5a5a5a;
 }
 
 .container {
@@ -160,10 +160,27 @@ header .contact .social-media a i {
 
 .hero h2.section-header {
   padding-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .hero p {
   text-align: justify;
+}
+
+.hero .flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.hero .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .shadow-background {
@@ -171,15 +188,20 @@ header .contact .social-media a i {
   padding: 1px 0 30px;
 }
 
+@media (min-width: 768px) {
+  .hero .flex {
+    flex-direction: row;
+    margin-top: 34px;
+  }
+}
+
 @media (min-width: 1200px) {
   .hero {
     padding: 70px 0;
   }
 
-  .hero p {
-    line-height: 1.4em;
-    letter-spacing: 1px;
-    text-align: left;
+  .hero .welcome {
+    align-items: flex-start;
   }
 
   .shadow-background {
@@ -187,7 +209,9 @@ header .contact .social-media a i {
   }
 
   .hero h2.section-header {
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
     letter-spacing: 3px;
   }
 }
@@ -353,14 +377,14 @@ header .contact .social-media a i {
   flex-direction: column;
 }
 
-.biography .headshot {
-  text-align: center;
-}
-
 .biography .cv {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.headshot {
+  text-align: center;
 }
 
 .headshot img {
