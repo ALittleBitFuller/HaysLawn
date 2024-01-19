@@ -54,6 +54,12 @@ a:focus {
   padding-right: 38px;
 }
 
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+  }
+
 @media (min-width: 768px) {
   .container {
     width: 698px;
@@ -115,7 +121,7 @@ header .contact .social-media {
   margin-left: 20px;
 }
 
-header .contact .social-media a i {
+header .contact .social-media a svg {
   font-size: 1.3em;
   color: #8dc63f;
 }
@@ -315,10 +321,8 @@ header .contact .social-media a i {
 }
 
 .services img {
-  width: 100%;
   border-radius: 50%;
   border: solid #ddd 2px;
-  height: auto;
 }
 
 .services .grid {
@@ -392,11 +396,9 @@ header .contact .social-media a i {
 }
 
 .headshot img {
-  /* width: 100%; */
   border-radius: 50%;
   border: solid #ddd 2px;
   height: auto;
-  /* margin-right: 40px; */
 }
 
 @media (min-width: 768px) {
@@ -410,7 +412,6 @@ header .contact .social-media a i {
   }
   .headshot img {
     margin-right: 40px;
-    width: 240px;
   }
 }
 
