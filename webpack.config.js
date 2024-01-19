@@ -4,7 +4,6 @@ const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const CssMinimizerPlugin = require( 'css-minimizer-webpack-plugin' );
 const HtmlMinimizerPlugin = require( "html-minimizer-webpack-plugin" );
 const CopyPlugin = require( "copy-webpack-plugin" );
-// const ImageMinimizerPlugin = require( "image-minimizer-webpack-plugin" );
 
 module.exports = () => {
 
@@ -26,6 +25,10 @@ module.exports = () => {
                     test: /.s?css$/,
                     use: [ 'css-loader', 'sass-loader' ]
                 },
+                {
+                    test: /\.(jpe?g|png)$/i,
+                    type: "asset",
+                }
                 // {
                 //     test: /\.(jpe?g|png|gif|svg)$/i,
                 //     use: [
