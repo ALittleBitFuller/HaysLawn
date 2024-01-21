@@ -1,7 +1,7 @@
 {
 	"name": "hays-lawn-pensacola",
 	"description": "The web home of Hays Lawn Pensacola",
-	"version": "1.9.0",
+	"version": "1.10.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ALittleBitFuller/HaysLawn.git"
